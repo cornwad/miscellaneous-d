@@ -26,7 +26,7 @@ ConfigFile="/etc/keepalived/keepalived.conf"
 
 if [ ! -r $ConfigFile ] ; then
     echo "configfile not readable"
-   # exit 1
+    exit 1
 fi
 
 # grab the IPs out of the lines in the conf file in this section:
